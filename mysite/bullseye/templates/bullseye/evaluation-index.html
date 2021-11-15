@@ -1,0 +1,13 @@
+<h1><a href='/'>bullseye</a></h1>
+
+{% if evaluation_list %}
+  <h2>Evaluations</h2>
+  <ul>
+  {% for evaluation in evaluation_list %}
+    <!-- <li><a href="/evaluations/{{evaluation.id}}/">{{evaluation}}</a></li> -->
+    <li><a href="{% url 'evaluation' evaluation.id %}">{{evaluation}}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No evaluations are available.</p>
+{% endif %}

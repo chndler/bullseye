@@ -1,0 +1,44 @@
+<title>bullseye</title>
+<h1><a href='/'>bullseye</a></h1>
+
+<h2>Dashboard</h2>
+{% if district_list %}
+  <h3><a href="/districts/">Districts</a></h3>
+  <!-- <ul>
+  {% for student in student_list %}
+    <li>{{student.first_name}} {{student.last_name}}</li>
+  {% endfor %}
+  </ul> -->
+{% else %}
+  <p>No districts are available.</p>
+{% endif %}
+{% if school_list %}
+  <h3><a href="/schools/">Schools</a></h3>
+  <!-- <ul>
+  {% for student in student_list %}
+    <li>{{student.first_name}} {{student.last_name}}</li>
+  {% endfor %}
+  </ul> -->
+{% else %}
+  <p>No schools are available.</p>
+{% endif %}
+{% if student_list %}
+  <h3><a href="/students/">Students</a></h3>
+  <!-- <ul>
+  {% for student in student_list %}
+    <li>{{student.first_name}} {{student.last_name}}</li>
+  {% endfor %}
+  </ul> -->
+{% else %}
+  <p>No students are available.</p>
+{% endif %}
+{% if evaluation_list %}
+  <h3><a href="/evaluations/">Evaluations</a></h3>
+  <!-- <ul>
+  {% for evaluation in evaluation_list %}
+    <li>{{evaluation}}</li>
+  {% endfor %}
+  </ul> -->
+{% else %}
+  <p>No evaluations are available.</p>
+{% endif %}

@@ -1,0 +1,13 @@
+<h1><a href='/'>bullseye</a></h1>
+
+{% if student_list %}
+  <h2>Students</h2>
+  <ul>
+  {% for student in student_list %}
+    <!-- <li><a href="/students/{{student.id}}/">{{student}}</a></li> -->
+    <li><a href="{% url 'student' student.id %}">{{student}}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No students are available.</p>
+{% endif %}

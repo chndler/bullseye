@@ -1,0 +1,184 @@
+[
+{
+  "model": "bullseye.district",
+  "pk": "2fbbdb87-b948-41de-bc1c-18c8b5a880a3",
+  "fields": {
+    "date_added": "2018-05-24T16:43:41.004Z",
+    "date_modified": "2018-05-24T16:43:41.004Z",
+    "name": "Judson ISD",
+    "address": "8012 Shin Oak Drive Live Oak TX 78233",
+    "contact_number": "+12109455101"
+  }
+},
+{
+  "model": "bullseye.district",
+  "pk": "a8c0ae30-4bb5-475a-bd21-0c61f6942c58",
+  "fields": {
+    "date_added": "2018-05-24T16:42:51.490Z",
+    "date_modified": "2018-05-24T16:42:51.491Z",
+    "name": "NISD",
+    "address": "5900 Evers Rd. San Antonio, TX 78238",
+    "contact_number": "+12103978500"
+  }
+},
+{
+  "model": "bullseye.school",
+  "pk": "183ca5e6-7787-4ff1-bd53-c66a99950de4",
+  "fields": {
+    "date_added": "2018-05-24T16:46:32.734Z",
+    "date_modified": "2018-05-24T16:46:32.734Z",
+    "name": "Stevenson MS",
+    "school_type": "Public School",
+    "district": "a8c0ae30-4bb5-475a-bd21-0c61f6942c58",
+    "address": "8403 Tezel Rd San Antonio, TX 78254",
+    "contact_number": "+12103977300"
+  }
+},
+{
+  "model": "bullseye.school",
+  "pk": "8b50be2f-8de2-4bd7-afdc-4b2c0f65964f",
+  "fields": {
+    "date_added": "2018-05-24T16:47:26.208Z",
+    "date_modified": "2018-05-31T15:18:30.086Z",
+    "name": "Hopkins ES",
+    "school_type": "Public School",
+    "district": "2fbbdb87-b948-41de-bc1c-18c8b5a880a3",
+    "address": "2440 Ackerman Rd San Antonio, TX 78219",
+    "contact_number": "+12106611120"
+  }
+},
+{
+  "model": "bullseye.school",
+  "pk": "a94e05a7-a807-4763-8558-f7e53ffae988",
+  "fields": {
+    "date_added": "2018-05-24T16:48:31.422Z",
+    "date_modified": "2018-05-24T16:48:31.422Z",
+    "name": "UTSA",
+    "school_type": "Public School",
+    "district": null,
+    "address": "1 UTSA Circle, San Antonio, TX 78249-3209",
+    "contact_number": "+12104584011"
+  }
+},
+{
+  "model": "bullseye.school",
+  "pk": "f65d3daa-17a3-4b1f-b52b-f00fc8e7efac",
+  "fields": {
+    "date_added": "2018-05-24T16:45:49.696Z",
+    "date_modified": "2018-05-24T16:45:49.696Z",
+    "name": "Braun Station ES",
+    "school_type": "Public School",
+    "district": "a8c0ae30-4bb5-475a-bd21-0c61f6942c58",
+    "address": "8631 Tezel Rd. San Antonio, TX 78254",
+    "contact_number": "+12103971550"
+  }
+},
+{
+  "model": "bullseye.note",
+  "pk": "01d7e476-abf7-499a-b6d6-bd62df4c6283",
+  "fields": {
+    "date_added": "2018-05-24T16:56:52.482Z",
+    "date_modified": "2018-05-24T16:56:52.482Z",
+    "title": "Burger of the Day",
+    "body": "She said Bob called it the say-cheese burger. Not very creative",
+    "content_type": 11,
+    "object_id": "e3044df8-945d-4061-8169-2731fc75323c"
+  }
+},
+{
+  "model": "bullseye.note",
+  "pk": "24834a35-4190-4299-982a-6198c6651d68",
+  "fields": {
+    "date_added": "2018-05-24T17:22:37.318Z",
+    "date_modified": "2018-05-31T15:16:32.340Z",
+    "title": "Problem with Mr. Frond",
+    "body": "She threw stole his doll after he stole her shark. Vengeance.",
+    "content_type": 11,
+    "object_id": "e3044df8-945d-4061-8169-2731fc75323c"
+  }
+},
+{
+  "model": "bullseye.evaluation",
+  "pk": "2a386289-a0f9-4338-ba63-eff14672d769",
+  "fields": {
+    "date_added": "2018-05-30T16:05:41.129Z",
+    "date_modified": "2018-05-30T16:05:41.129Z",
+    "due_date": "2018-07-29",
+    "evaluation_type": "AU Eval",
+    "student": "e28248d2-0fbb-44ed-9078-9933e853df1d",
+    "current_grade": null
+  }
+},
+{
+  "model": "bullseye.evaluation",
+  "pk": "5c75604a-2067-46b4-9795-efa901643164",
+  "fields": {
+    "date_added": "2018-05-24T17:33:22.451Z",
+    "date_modified": "2018-05-24T17:33:22.451Z",
+    "due_date": "2018-07-23",
+    "evaluation_type": "ID Eval",
+    "student": "e28248d2-0fbb-44ed-9078-9933e853df1d",
+    "current_grade": 7
+  }
+},
+{
+  "model": "bullseye.student",
+  "pk": "355cbb9c-e83b-45ae-9463-18ab50aecf00",
+  "fields": {
+    "date_added": "2018-05-31T14:39:54.442Z",
+    "date_modified": "2018-05-31T14:58:54.892Z",
+    "first_name": "Lisa",
+    "last_name": "Simpson",
+    "date_of_birth": "2007-05-09",
+    "school": null,
+    "mailing_address": "",
+    "contact_number": "+12104584011",
+    "language_preference": "English"
+  }
+},
+{
+  "model": "bullseye.student",
+  "pk": "b4b8bf04-45f2-48cf-81d1-9efc10d172bd",
+  "fields": {
+    "date_added": "2018-05-31T14:40:28.953Z",
+    "date_modified": "2018-05-31T14:56:04.324Z",
+    "first_name": "Gene",
+    "last_name": "Belcher",
+    "date_of_birth": "2011-08-22",
+    "school": "f65d3daa-17a3-4b1f-b52b-f00fc8e7efac",
+    "mailing_address": "",
+    "contact_number": "+12105557788",
+    "language_preference": "English"
+  }
+},
+{
+  "model": "bullseye.student",
+  "pk": "e28248d2-0fbb-44ed-9078-9933e853df1d",
+  "fields": {
+    "date_added": "2018-05-24T16:49:40.913Z",
+    "date_modified": "2018-05-30T16:23:14.726Z",
+    "first_name": "Bart",
+    "last_name": "Simpson",
+    "date_of_birth": "2007-06-22",
+    "school": "f65d3daa-17a3-4b1f-b52b-f00fc8e7efac",
+    "mailing_address": "",
+    "contact_number": "+12107893344",
+    "language_preference": "English"
+  }
+},
+{
+  "model": "bullseye.student",
+  "pk": "e3044df8-945d-4061-8169-2731fc75323c",
+  "fields": {
+    "date_added": "2018-05-24T16:49:06.436Z",
+    "date_modified": "2018-05-31T14:38:25.532Z",
+    "first_name": "Louise",
+    "last_name": "Belcher",
+    "date_of_birth": "2009-02-13",
+    "school": "f65d3daa-17a3-4b1f-b52b-f00fc8e7efac",
+    "mailing_address": "",
+    "contact_number": "+12102345566",
+    "language_preference": "French"
+  }
+}
+]

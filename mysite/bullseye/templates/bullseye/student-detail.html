@@ -1,0 +1,45 @@
+<h1><a href='/'>bullseye</a></h1>
+
+{% if student %}
+  <h2>Student Details</h2>
+  <li>Date Added: {{student.date_added}}</li>
+  <li>Date Modified: {{student.date_modified}}</li>
+  <ul>
+    <li>Student: {{student}}</li>
+    {% if student.school %}
+      <li>School: <a href="{% url 'school' student.school.id %}">{{student.school}}</a></li>
+    {% else %}
+      <li>School: None</li>
+    {% endif %}
+    <li>Date of Birth: {{student.date_of_birth}}</li>
+    <li>Contact Number: {{student.contact_number}}</li>
+    <li>Mailing Address: {{student.mailing_address}}</li>
+    <li>Language Preference: {{student.language_preference}}</li>
+    <li>Notes:
+      <ul>
+      {% if notes %}
+        {% for note in notes %}
+          <!-- <li><a href="/notes/{{note.id}}/">{{note}}</a></li> -->
+          <li><a href="{% url 'note' note.id %}">{{note}}</a></li>
+        {% endfor %}
+      {% else %}
+        <li>No notes associated directly with {{student}}</li>
+      {% endif %}
+      </ul>
+    </li>
+    <li>Evaluations:
+      <ul>
+      {% if evaluations %}
+        {% for eval in evaluations %}
+          <!-- <li><a href="/evaluations/{{eval.id}}/">{{eval}}</a></li> -->
+          <li><a href="{% url 'evaluation' eval.id %}">{{eval}}</a></li>
+        {% endfor %}
+      {% else %}
+        <li>No evaluations associated with {{student}}</li>
+      {% endif %}
+      </ul>
+    </li>
+  </ul>
+{% else %}
+  <p>No student with pk={{student_id}}</p>
+{% endif %}

@@ -1,0 +1,5 @@
+Django>=2.0.5
+pip-tools>=2.0.2
+psycopg2-binary>=2.7.4
+django-phonenumber-field>=2.0.0
+selenium>=3.12

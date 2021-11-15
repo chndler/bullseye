@@ -1,0 +1,13 @@
+<h1><a href='/'>bullseye</a></h1>
+
+{% if district_list %}
+  <h2>Districts</h2>
+  <ul>
+  {% for district in district_list %}
+    <!-- <li><a href="/districts/{{district.id}}/">{{district}}</a></li> -->
+    <li><a href="{% url 'district' district.id %}">{{district}}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No districts are available now.</p>
+{% endif %}

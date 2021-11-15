@@ -1,0 +1,24 @@
+<h1><a href='/'>bullseye</a></h1>
+
+{% if district %}
+<h2>District Details</h2>
+<ul>
+  <li>District: {{district}}</li>
+  <li>Address: {{district.address}}</li>
+  <li>Contact Number: {{district.contact_number}}</li>
+  <li>Schools:
+    <ul>
+    {% if schools %}
+      {% for school in schools %}
+        <!-- <li><a href="/schools/{{school.id}}/">{{school}}</a></li> -->
+        <li><a href="{% url 'school' school.id %}">{{school}}</a></li>
+      {% endfor %}
+    {% else %}
+      <li>No schools associated with {{district}}</li>
+    {% endif %}
+    </ul>
+  </li>
+</ul>
+{% else %}
+  <p>No districts with pk={{district_id}}</p>
+{% endif %}

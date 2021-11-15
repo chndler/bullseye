@@ -1,0 +1,13 @@
+<h1><a href='/'>bullseye</a></h1>
+
+{% if note %}
+<h2>Note Details</h2>
+<li>Date Added: {{note.date_added}}</li>
+<li>Date Modified: {{note.date_modified}}</li>
+<ul>
+  <li>Title: {{note.title}}</li>
+  <li>Body: {{note.body}}</li>
+</ul>
+{% else %}
+  <p>No note with pk={{note_id}}</p>
+{% endif %}
